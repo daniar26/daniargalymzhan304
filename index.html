@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doni Flowers</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Добавим иконку для поиска и корзины -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Верхняя панель с логотипом, поиском и корзиной -->
+    <div class="top-bar">
+        <img src="https://pro-buket.kz/wp-content/uploads/2021/09/%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D0%BA%D0%B0-51-%D1%80%D0%BE%D0%B7%D0%B060-70%D1%81%D0%BC-41000%D1%82%D0%B3.webp?ver=2" alt="Small Logo" class="small-logo">
+        
+        <!-- Список с категориями -->
+        <ul class="category-list">
+            <li><a href="#">Все цветы</a></li>
+            <li><a href="#">Розы</a></li>
+            <li><a href="#">Клубника в шоколаде</a></li>
+            <li><a href="#">Сладкие букеты</a></li>
+            <li><a href="#">Торты</a></li>
+            <li><a href="#">Подарки</a></li>
+            <li><a href="#">Шары</a></li>
+        </ul>  
+        
+        <!-- Форма для поиска -->
+        <form action="#" class="search-form">
+            <input type="text" placeholder="Поиск..." class="search-input">
+            <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+        </form>
+        
+        <!-- Иконка корзины -->
+        <a href="#" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span> <!-- Количество товаров в корзине -->
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <img src="https://pro-buket.kz/wp-content/uploads/2021/09/%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D0%BA%D0%B0-51-%D1%80%D0%BE%D0%B7%D0%B060-70%D1%81%D0%BC-41000%D1%82%D0%B3.webp?ver=2" alt="Sylvie Flowers Logo" class="logo">
+            <h1>Sylvie Flowers</h1>
+            <p>Премиальные букеты с любовью</p>
+        </div>
+
+        <div class="buttons">
+            <a href="https://wa.me/7751324565" class="btn" target="_blank">Заказать букет <span>Написать на WhatsApp</span></a>
+            <a href="tel:+7751324565" class="btn" target="_blank">Позвонить <span>на номер телефона</span></a>
+            <a href="https://2gis.kz/almaty/search/%D0%B6%D0%B5%D1%82%D1%8B%D1%81%202%2016%D0%B0/firm/70000001017560124/76.84582%2C43.224508/tab/info" class="btn" target="_blank">Наш адрес <span>Мы в 2GIS</span></a>
+            <a href="https://flower.kz/?gad_source=1&gclid=Cj0KCQiA_qG5BhDTARIsAA0UHSJ4a9VGkoyZC2NAyb670iGgGhXgwflA2PqHckOUi3Ai4iyxFOjz9qYaAka4EALw_wcB" class="btn" target="_blank">Наши цветы <span>Посмотреть на Flower.kz</span></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Сделал <a href="#" target="_blank">Daniar Tuleev 304</a></p>
+    </footer>
+
+    <style>
+        /* Общий стиль для body */
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMZta9Y1-thVXhG0boTKX59QxST8HUi-Lt9A&s');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-attachment: fixed;
+            overflow: auto;
+        }
+
+        /* Верхняя панель с логотипом, поиском и корзиной */
+        .top-bar {
+            width: 100%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Разделяем элементы по краям */
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .small-logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        /* Список категорий */
+        .category-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .category-list li {
+            display: inline-block;
+        }
+
+        .category-list a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+            padding: 10px 15px;
+            background-color: #ff69b4;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .category-list a:hover {
+            background-color: #ff85c2;
+        }
+
+        /* Форма поиска */
+        .search-form {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .search-input {
+            padding: 8px 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            outline: none;
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 5px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            color: #ff69b4;
+            font-size: 20px;
+        }
+
+        /* Иконка корзины */
+        .cart-icon {
+            display: flex;
+            align-items: center;
+            color: #333;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .cart-icon i {
+            font-size: 24px;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: red;
+            color: white;
+            font-size: 12px;
+            border-radius: 50%;
+            padding: 5px;
+        }
+
+        /* Контейнер с основным содержимым */
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            margin-top: 20px;
+            flex-grow: 1;
+        }
+
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            max-width: 100px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #b22222;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: block;
+            background-color: #ff69b4;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 18px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background-color: #ff85c2;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: center;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+
+        footer a {
+            color: #888;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</body>
+</html>
